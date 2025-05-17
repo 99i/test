@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="TemplateMo">
+  <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <title>شركة ثقة الأولى لتحصيل الديون</title>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/lightbox.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+  <style>
+    /* General RTL for Arabic text */
+    body {
+      font-family: "Cairo", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+      font-variation-settings: "slnt" 0;
+      direction: rtl;
+      font-size: 1.2rem; /* Increased base font size */
+    }
+
+    /* Increase font sizes for specific elements */
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 1.8rem; /* Larger headings */
+    }
+    p, .description, .caption, .text-content, .contact-item, .down-content {
+      font-size: 1.1rem; /* Larger paragraphs */
+    }
+    .nav a {
+      font-size: 1.2rem; /* Larger nav links */
+    }
+    .lang-toggle button {
+      font-size: 1.1rem; /* Larger button text */
+    }
+    .footer-item p, .copyright p {
+      font-size: 1.1rem; /* Larger footer text */
+    }
+
+    /* Sub-header RTL */
+    .sub-header .left-content,
+    .sub-header .right-icons {
+      direction: rtl;
+      text-align: right;
+    }
+
+    /* Navigation bar adjustments */
+    .main-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .main-nav .logo {
+      order: 3; /* Logo on the right */
+    }
+
+    .main-nav .nav {
+      order: 1; /* Nav links on the left */
+      display: flex;
+      justify-content: flex-start;
+      margin-right: auto;
+    }
+
+    .main-nav .lang-toggle {
+      order: 2; /* Language toggle in the middle */
+      margin: 0 20px;
+    }
+
+    .lang-toggle button {
+      background: #f5a425;
+      color: #fff;
+      border: none;
+      padding: 10px 20px; /* Slightly larger padding */
+      border-radius: 20px;
+      cursor: pointer;
+      font-family: "Cairo", sans-serif;
+    }
+
+    .lang-toggle button:hover {
+      background: #e69500;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 767px) {
+      .main-nav .nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+      }
+      .main-nav .nav.active {
+        display: flex;
+      }
+      .main-nav .lang-toggle {
+        margin: 10px 0;
+      }
+    }
+
+    /* Center h2 titles */
+    h2, .section-heading h2 {
+      text-align: center;
+      direction: rtl;
+    }
+
+    /* RTL for text content */
+    p, .description, .caption, .text-content, .footer-content, .contact-item, .down-content {
+      direction: rtl;
+      text-align: right;
+    }
+
+    /* Specific sections */
+    .caption p, .meeting-item .description, .reason-box p, #contact form {
+      direction: rtl;
+      text-align: right;
+    }
+
+    /* Form inputs for RTL */
+    #contact form input,
+    #contact form textarea {
+      text-align: right;
+      direction: rtl;
+      font-size: 1.1rem; /* Larger form input text */
+    }
+
+    /* Worker slider */
+    .worker-slider h2 {
+      text-align: center;
+    }
+
+    .worker-slider .slider {
+      direction: ltr; /* Keep slider direction LTR for animation */
+    }
+
+    .worker-slider .slide img {
+      border-radius: 50%; /* Circular images */
+      width: 100px; /* Adjust size as needed */
+      height: 100px;
+      object-fit: cover;
+    }
+
+    .slider-track {
+      animation: scroll 40s linear infinite;
+    }
+
+    .worker-slider:hover .slider-track {
+      animation-play-state: paused; /* Pause animation on hover */
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* Footer */
+    .footer-content {
+      display: flex;
+      justify-content: center; /* Center footer items */
+      flex-wrap: wrap;
+    }
+
+    .footer-content .footer-item {
+      text-align: center; /* Center text in each footer item */
+      margin: 0 20px;
+    }
+
+    .copyright {
+      text-align: center; /* Center copyright text */
+    }
+
+    /* Icon adjustments for RTL */
+    .hero-icon, .meeting-item .icon, .reason-box .icon-wrapper {
+      margin-left: 10px;
+      margin-right: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Loading overlay for initialization -->
+  <div id="loading-overlay">
+    <div class="logo"><img src="assets/images/logo.png" alt="First Trust Logo"></div>
+  </div>
+
+  <!-- Sub Header -->
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-8">
+          <div class="left-content">
+            <p>
+              <span class="contact-item"> <i class="fas fa-envelope"></i><em> info@thigah1.com </em></span>
+              <span class="contact-item"> <i class="fas fa-phone"></i><em> +966 534 559 931</em></span>
+              <span class="contact-item"> <i class="fas fa-map-marker-alt"></i><em> الرياض - حي الملز - طريق صلاح الدين الأيوبي</em></span>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+          <div class="right-icons">
+            <ul>
+              <li><a href="ContactUS.html"><i class="fa fa-whatsapp"></i></a></li>
+              <li><a href="ContactUS.html"><i class="fa fa-phone"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="assets/images/logo.png" class="navbar-brand-image img-fluid" alt="First Trust Logo">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#section1" class="active">القائمة الرئيسية</a></li>
+              <li class="scroll-to-section"><a href="#section2">الخدمات</a></li>
+              <li class="scroll-to-section"><a href="#section3">من نحن</a></li>
+              <li class="scroll-to-section"><a href="#section4">لماذا نحن</a></li>
+              <li class="scroll-to-section"><a href="#contact">اتصل بنا</a></li>
+            </ul>
+            <div class="lang-toggle">
+              <button onclick="window.location.href='http://127.0.0.1:5500/eg/index.html'">English</button>
+            </div>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+    <video autoplay muted loop id="bg-video">
+      <source src="assets/images/course-video.mp4" type="video/mp4" />
+    </video>
+    <div class="video-overlay header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="caption">
+              <h2 class="fs-1">شركة ثقة الأولى لتحصيل الديون</h2>
+              <p>نظراً لزيادة الحاجة الملحة إلى وجود محصلين محترفين وقانونيين ذوي كفاءة مهنية للمتابعة مع العملاء لحثهم على السداد، مع تقديم الاستشارات والحلول والبدائل العملية لمساعدة المتعثرين على الالتزام بسداد مديونيتهم، نحن في شركة ثقة نقدم لكم جميع الخدمات التي تلبي احتياجاتكم.</p>
+              <div class="main-button-red">
+                <div class="custom-btn-group">
+                  <a href="ContactUS.html" style="color: #000000;">استشارة مجانية</a>
+                  <a href="https://drive.google.com/file/d/1u7O7825ezKtTRVGV30-3bbRoEWAdwbJA/view?usp=sharing" target="_blank" style="color: #000000;">الملف الشخصي</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+  <section class="upcoming-meetings section" id="meetings" data-section="section2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>خدماتنا</h2>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="grid-container">
+            <!-- Card 1 -->
+            <div class="meeting-item">
+              <div class="bg-overlay"></div>
+              <div class="down-content d-flex align-items-center">
+                <div class="price">
+                  <h1>١</h1>
+                </div>
+                <div class="icon ms-3">
+                  <i class="fa fa-user"></i>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <a href="" class="d-block">
+                    <h4>تحصيل ديون الأفراد</h4>
+                  </a>
+                  <p class="description">
+                    تحصيل ديون الأفراد هو عملية استرداد الأموال المستحقة من الأفراد الذين لم يسددوا ديونهم في الوقت المحدد. تشمل هذه الديون القروض الشخصية، بطاقات الائتمان، الفواتير غير المدفوعة، وغيرها من الالتزامات المالية.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="meeting-item">
+              <div class="bg-overlay"></div>
+              <div class="down-content d-flex align-items-center">
+                <div class="price">
+                  <h1>٢</h1>
+                </div>
+                <div class="icon ms-3">
+                  <i class="fa fa-building"></i>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <a href="meeting-details.html" class="d-block">
+                    <h4>تحصيل ديون الشركات</h4>
+                  </a>
+                  <p class="description">
+                    تحصيل ديون الشركات هو عملية استرداد الأموال المستحقة لشركة معينة من عملائها أو الموردين الذين لم يسددوا ديونهم في الوقت المحدد. تشمل هذه الديون الفواتير غير المدفوعة، المستحقات من العقود، أو القروض. من خلال تقديم حلول دفع مرنة مثل تقسيط الديون.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="meeting-item">
+              <div class="bg-overlay"></div>
+              <div class="down-content d-flex align-items-center">
+                <div class="price">
+                  <h1>٣</h1>
+                </div>
+                <div class="icon ms-3">
+                  <i class="fas fa-landmark"></i>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <a href="meeting-details.html" class="d-block">
+                    <h4>تحصيل البنوك</h4>
+                  </a>
+                  <p class="description">
+                    هي عملية استرداد الأموال المستحقة للبنك من العملاء الذين لم يسددوا قروضهم أو مستحقاتهم المالية مثل القروض الشخصية، القروض العقارية، بطاقات الائتمان، أو أي ديون أخرى. تشمل هذه الخدمة عدة خطوات تبدأ بالتواصل مع المدينين لتذكيرهم بالتسديد، وتقديم حلول مرنة مثل إعادة جدولة الديون أو تقسيط المبالغ المستحقة.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="meeting-item">
+              <div class="bg-overlay"></div>
+              <div class="down-content d-flex align-items-center">
+                <div class="price">
+                  <h1>٤</h1>
+                </div>
+                <div class="icon ms-3">
+                  <i class="fa fa-university"></i>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <a href="meeting-details.html" class="d-block">
+                    <h4>تحصيل القطاعات الحكومية</h4>
+                  </a>
+                  <p class="description">
+                    تحصيل ديون القطاعات الحكومية يتعلق باسترداد الأموال المستحقة للجهات الحكومية من الأفراد أو الشركات، مثل الضرائب، الرسوم، الغرامات، أو أي مستحقات أخرى. تتم عملية التحصيل من خلال وسائل متعددة، مثل إرسال إشعارات تحصيل أو تقديم خيارات سداد مرنة.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="meeting-item">
+              <div class="bg-overlay"></div>
+              <div class="down-content d-flex align-items-center">
+                <div class="price">
+                  <h1>٥</h1>
+                </div>
+                <div class="icon ms-3">
+                  <i class="fa fa-car"></i>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <a href="meeting-details.html" class="d-block">
+                    <h4>سحب السيارات</h4>
+                  </a>
+                  <p class="description">
+                    خدمة سحب السيارات هي عملية تقوم بها البنوك، شركات التأمين، أو المؤسسات المالية لسحب السيارات من مالكيها في حال عدم سداد الأقساط المستحقة أو الديون المتعلقة بالسيارة. عادة ما تتم هذه الخدمة بعد فترة من التحذيرات أو التنبيهات للمدينين بشأن تسوية المبالغ المستحقة.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-us section" id="AboutUs" data-section="section3">
+    <div class="hero-section">
+      <div class="hero-content">
+        <i class="fas fa-handshake hero-icon"></i>
+        <h2>من نحن</h2>
+        <p>شركة ثقة الأولى لتحصيل الديون منشأة بأبعاد عالمية تعتمد على فريق عمل ذو خبرة عملية عالية وعلى دراية نظرية ومعرفة قانونية في مجال التحصيل، وتماشياً مع التقنية فقد أسسنا نظام إلكتروني متطور يواكب تطلعات وأهداف عملائنا أكثر من 11 عاماً كنا مصدر ثقة لعملائنا في تحصيل الديون داخل المملكة العربية السعودية وخارجها.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>أهدافنا</h2>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="grid-container">
+            <!-- Card 1 -->
+            <div class="meeting-item">
+              <div class="bg-overlay"></div>
+              <div class="down-content d-flex align-items-center">
+                <div class="date">
+                  <h1>1</h1>
+                </div>
+                <div class="icon ms-3">
+                  <i class="fa fa-eye"></i>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h4>رؤيتنا</h4>
+                  <p class="description">
+                    نحن نفخر بخدماتنا الناجحة التي جعلتنا واحدة من أفضل شركات التحصيل في المملكة العربية وتطبيق استراتيجيات جديدة على خدماتنا لتحقيق أهدافنا المستقبلية.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="meeting-item">
+              <div class="bg-overlay"></div>
+              <div class="down-content d-flex align-items-center">
+                <div class="date">
+                  <h1>2</h1>
+                </div>
+                <div class="icon ms-3">
+                  <i class="fa fa-bullseye"></i>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h4>أهدافنا</h4>
+                  <p class="description">
+                    أن نكون دائماً في محل ثقة لدى شركائنا وأن نكون الخيار الأول والأفضل دائماً في تقديم خدماتنا بجودة عالية.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="meeting-item">
+              <div class="bg-overlay"></div>
+              <div class="down-content d-flex align-items-center">
+                <div class="date">
+                  <h1>3</h1>
+                </div>
+                <div class="icon ms-3">
+                  <i class="fas fa-gem"></i>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h4>قيمنا</h4>
+                  <p class="description">
+                    استناداً من ديننا الإسلامي الحنيف نلتزم بهذه القيم في جميع ما نقدمه من خدمات والتعهد التام بالحفاظ على السرية من خلال جودة عالية تضمن تحقيق أفضل النتائج.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us - Grid Style -->
+  <section class="why-choose-us grid-style section" id="why-choose-us" data-section="section4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>لماذا شركة ثقة الأولى؟</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="reason-box">
+            <div class="icon-wrapper">
+              <i class="fas fa-balance-scale"></i>
+            </div>
+            <div class="text-content">
+              <h4>خبرة التحصيل</h4>
+              <p>
+                خبراتنا عالية في المجال القانوني ويضم المكتب عدد من المحصلين من ذوي المؤهلات العالية في القانون.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="reason-box">
+            <div class="icon-wrapper">
+              <i class="fas fa-tachometer-alt"></i>
+            </div>
+            <div class="text-content">
+              <h4>مدة التحصيل</h4>
+              <p>
+                من أهم أسباب نجاحنا سرعتنا الفائقة في التحصيل لإدراكنا لأهمية الوقت في عملية التحصيل ولأننا نمتلك فريق متكامل يضم خبراء وقانونيين مدربين على بشكل يضمن إنجاز العمل بوقت قياسي وناجح.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="reason-box">
+            <div class="icon-wrapper">
+              <i class="fa fa-trophy"></i>
+            </div>
+            <div class="text-content">
+              <h4>نسبة نجاح عالية</h4>
+              <p>
+                يتم إيجاد أفضل الحلول للمتعثرين لتسهيل وسرعة السداد.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="reason-box">
+            <div class="icon-wrapper">
+              <i class="fa fa-sitemap"></i>
+            </div>
+            <div class="text-content">
+              <h4>تقسيم العمل بشكل متميز</h4>
+              <p>
+                حيث التسهيل وسير العمل بشكل ممتاز نسعى أن يتم توزيع المهام اليومية بشكل مثالي.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <workerslider class="worker-slider">
+      <section>
+        <h2>شركاء التنمية</h2>
+        <div class="slider">
+          <div class="slider-track">
+            <!-- Original 13 slides -->
+            <div class="slide"><img src="assets/images/worker/1.png" alt="Worker 1"></div>
+            <div class="slide"><img src="assets/images/worker/2.png" alt="Worker 2"></div>
+            <div class="slide"><img src="assets/images/worker/3.png" alt="Worker 3"></div>
+            <div class="slide"><img src="assets/images/worker/4.png" alt="Worker 4"></div>
+            <div class="slide"><img src="assets/images/worker/5.png" alt="Worker 5"></div>
+            <div class="slide"><img src="assets/images/worker/6.png" alt="Worker 6"></div>
+            <div class="slide"><img src="assets/images/worker/7.png" alt="Worker 7"></div>
+            <div class="slide"><img src="assets/images/worker/8.png" alt="Worker 8"></div>
+            <div class="slide"><img src="assets/images/worker/9.png" alt="Worker 9"></div>
+            <div class="slide"><img src="assets/images/worker/10.png" alt="Worker 10"></div>
+            <div class="slide"><img src="assets/images/worker/11.png" alt="Worker 11"></div>
+            <div class="slide"><img src="assets/images/worker/12.png" alt="Worker 12"></div>
+            <div class="slide"><img src="assets/images/worker/13.png" alt="Worker 13"></div>
+            <!-- Duplicated 13 slides for seamless looping -->
+            <div class="slide"><img src="assets/images/worker/1.png" alt="Worker 1"></div>
+            <div class="slide"><img src="assets/images/worker/2.png" alt="Worker 2"></div>
+            <div class="slide"><img src="assets/images/worker/3.png" alt="Worker 3"></div>
+            <div class="slide"><img src="assets/images/worker/4.png" alt="Worker 4"></div>
+            <div class="slide"><img src="assets/images/worker/5.png" alt="Worker 5"></div>
+            <div class="slide"><img src="assets/images/worker/6.png" alt="Worker 6"></div>
+            <div class="slide"><img src="assets/images/worker/7.png" alt="Worker 7"></div>
+            <div class="slide"><img src="assets/images/worker/8.png" alt="Worker 8"></div>
+            <div class="slide"><img src="assets/images/worker/9.png" alt="Worker 9"></div>
+            <div class="slide"><img src="assets/images/worker/10.png" alt="Worker 10"></div>
+            <div class="slide"><img src="assets/images/worker/11.png" alt="Worker 11"></div>
+            <div class="slide"><img src="assets/images/worker/12.png" alt="Worker 12"></div>
+            <div class="slide"><img src="assets/images/worker/13.png" alt="Worker 13"></div>
+          </div>
+        </div>
+      </section>
+    </workerslider>
+  </section>
+
+  <section class="contact-us section" id="contact" data-section="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div id="contact">
+            <h2>تواصل معنا</h2>
+            <form action="#" method="post">
+              <input type="text" name="name" placeholder="اسمك" required>
+              <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+              <input type="text" name="subject" placeholder="الموضوع">
+              <textarea name="message" placeholder="رسالتك" required></textarea>
+              <button type="submit">أرسل</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-item">
+            <h6>الشروط والأحكام</h6>
+            <a href="/terms-and-conditions">اقرأ الشروط</a>
+          </div>
+          <div class="footer-item">
+            <h6>تواصل معنا</h6>
+            <p>info@thigah1.com<br>+966 534 559 931</p>
+          </div>
+          <div class="footer-item">
+            <h6>واتساب</h6>
+            <a href="https://api.whatsapp.com/send/?phone=966530989313&text=" target="_blank">تحدث معنا</a>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>جميع الحقوق محفوظة لدى الشركة الأولى 2025</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="credits/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/video.js"></script>
+  <script src="assets/js/slick-slider.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Show loading overlay on page initialization
+      setTimeout(function () {
+        $('#loading-overlay').fadeOut(500);
+      }, 2000);
+
+      // Menu toggle for mobile
+      $('.menu-trigger').click(function () {
+        $('.nav').slideToggle(300);
+        $(this).toggleClass('active');
+      });
+
+      // Close menu when a nav link is clicked (for mobile)
+      $('.nav a').click(function () {
+        if ($('.nav').is(':visible') && $(window).width() < 768) {
+          $('.nav').slideUp(300);
+          $('.menu-trigger').removeClass('active');
+        }
+      });
+
+      // Set first nav item as active
+      $('.nav li:first').addClass('active');
+
+      // Scroll to section
+      var showSection = function (section, isAnimate) {
+        var direction = section.replace(/#/, ''),
+            reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+            reqSectionPos = reqSection.length ? reqSection.offset().top : 0;
+
+        if (reqSection.length) {
+          if (isAnimate) {
+            $('body, html').animate({ scrollTop: reqSectionPos }, 800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+        }
+      };
+
+      // Update active nav item on scroll
+      var checkSection = function () {
+        $('.section').each(function () {
+          var $this = $(this),
+              topEdge = $this.offset().top - 80,
+              bottomEdge = topEdge + $this.height(),
+              wScroll = $(window).scrollTop();
+
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data('section'),
+                reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+            reqLink.closest('li').addClass('active').siblings().removeClass('active');
+          }
+        });
+      };
+
+      // Handle nav link clicks
+      $('.scroll-to-section a').on('click', function (e) {
+        e.preventDefault();
+        showSection($(this).attr('href'), true);
+      });
+
+      // Handle external page links to show loading.html
+      $('a[href$=".html"]').on('click', function (e) {
+        e.preventDefault();
+        var targetUrl = $(this).attr('href');
+        sessionStorage.setItem('targetUrl', targetUrl);
+        window.location.href = 'loading.html';
+      });
+
+      // Update active section on scroll
+      $(window).scroll(function () {
+        checkSection();
+      });
+    });
+
+    const sliderTrack = document.querySelector('.slider-track');
+    sliderTrack.addEventListener('animationiteration', () => {
+      sliderTrack.style.transition = 'none';
+      sliderTrack.style.transform = 'translateX(0)';
+      sliderTrack.offsetHeight; // Force reflow
+      sliderTrack.style.transition = 'transform 0.1s linear';
+    });
+  </script>
+  <script src="fade-in.js"></script>
+</body>
+</html>
